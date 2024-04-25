@@ -5,9 +5,9 @@
   "main": "src/index.js",
   "scripts": {
     "build":                "node build.client.js",
-    "dev:build-client":     "./node_modules/.bin/nodemon --watch src  --watch build.client.js build.client.js --ext js,tag,css",
-    "dev:start-web-server": "./node_modules/.bin/browser-sync start -s -w --directory --startPath ./public/index.html",
-    "start":                "./node_modules/.bin/run-p dev:*"
+    "dev:build-client":     "nodemon --watch src  --watch build.client.js build.client.js --ext js,tag,css",
+    "dev:start-web-server": "browser-sync start -s -w --directory --startPath ./public/index.html",
+    "start":                "run-p dev:*"
   },
   "keywords": [
     "ui",
